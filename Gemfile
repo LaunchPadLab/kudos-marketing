@@ -7,3 +7,4 @@ gem 'rack-jekyll'
 gem 'rake'
 gem 'puma'
 gem 'rack-ssl-enforcer'
+gem "github-pages", group: :jekyll_plugins
