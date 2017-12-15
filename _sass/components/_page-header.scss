@@ -1,0 +1,185 @@
+.page-header {
+  background: url('../images/background.jpg') no-repeat center;
+  background-size: cover;
+  min-height: 100vh;
+  //@include rem(padding, 40px 20px);
+
+  h1, p, h4 { color: $white-base;  }
+
+  h4{
+    border-bottom: 2px solid $white-base;
+    width: auto;
+    display: inline-block;
+    padding-bottom: 5px;
+  }
+}
+
+.page-header{
+  position: relative;
+  text-align: center;
+
+  .header-container{
+    @include media($tablet-landscape){
+      height: 100vh;
+    }
+  }
+
+  .header-text{
+    @include animation(fade-in 0.6s ease-in);
+    //@include rem(margin-top, 30px);
+    //@include rem(padding, 60px 20px);
+    display: inline-block;
+    text-align: center;
+    margin: 0 auto;
+
+    @include media($tablet){
+
+      max-width: 700px;
+    }
+
+    @include media($tablet-landscape) {
+      //@include vertical-center;
+      text-align: left;
+      float: right;
+      @include span-columns(7 of 12);
+      @include shift(3.75);
+      @include vertical-center;
+    }
+
+    h1{
+      margin: 0 auto inherit;
+      @include rem(margin-top, 30px);
+
+      @include media($tablet-landscape){
+        @include rem(margin-top, 10px);
+      }
+    }
+
+    p{
+      @include s-medium;
+    }
+  }
+
+  .home-image{
+    max-width: 400px;
+    @include rem(margin-top, 50px);
+
+    @include media($tablet-landscape) {
+      @include rem(margin-top, 0px);
+      float: left;
+      @include span-columns(3.5 of 12);
+      @include vertical-center;
+    }
+  }
+}
+
+
+@keyframes fade-in-up{
+  0%{ opacity:0; @include transform(translateY(10%) translateX(0%)); }
+  100%{ opacity:1; @include transform(translateY(0%) translateX(0%));}
+}
+
+@keyframes fade-in-right{
+  0%{ opacity:0; @include transform(translateX(50%)); }
+  100%{ opacity:1; @include transform(translateX(0%));}
+}
+
+@keyframes fade-in-left{
+  0%{ opacity:0; @include transform(translateX(-50%)); }
+  100%{ opacity:1; @include transform(translateX(0%));}
+}
+
+@keyframes slide-in-right{
+  0%{ @include transform(translateX(100%)); }
+  100%{ @include transform(translateX(0%));}
+}
+
+@keyframes slide-in-left{
+  0%{ @include transform(translateX(-100%)); }
+  100%{ @include transform(translateX(0%));}
+}
+
+@keyframes fade-in{
+  0%{ opacity:0; }
+  100%{ opacity:1; }
+}
+
+
+.home-header{
+  background: url("../images/home-background.jpg") center no-repeat;
+  background-size: cover;
+
+  &:after{
+    background: url("../images/angle.svg") center no-repeat;
+    background-size: cover;
+    height: 50%;
+    margin-bottom: -1px;
+  }
+
+  .header-text{
+    @include rem(padding, 60px 20px 160px);
+
+    @include media($tablet){
+      @include vertical-horizontal-center;
+      @include rem(margin-bottom, 20px);
+      @include rem(margin-top, -30px);
+      @include rem(padding, 60px 20px 160px);
+    }
+
+    @include media($tablet-landscape) {
+      @include rem(margin-top, -90px);
+      @include rem(padding, 60px 20px);
+    }
+
+  }
+}
+
+.blog-header{
+  background-color: $blue-dark;
+
+  @include media($tablet) {
+    height: inherit;
+  }
+
+  &:after{
+    background: $blue-dark;
+    bottom: 0px;
+    content: '';
+    display: block;
+    height: 100vh;
+    left: 0;
+    position: absolute;
+    right: 0;
+    transform: skewY(-14.5deg);
+    z-index: -1;
+    transform-origin: 100% 0;
+  }
+
+  .header-text{
+    @include rem(padding, 60px 20px);
+
+    @include media($tablet) {
+      @include rem(padding, 110px 20px 90px);
+    }
+  }
+}
+
+
+.call-to-action{
+  .link-white-base{
+    display: block;
+
+    @include media($tablet){
+      display: inline-block;
+      @include rem(margin-left, 20px);
+    }
+  }
+}
+
+.play-button{
+  cursor: pointer;
+  display: inline-block;
+  @include rem(margin-right, 5px);
+  width: 30px;
+  vertical-align: middle;
+}

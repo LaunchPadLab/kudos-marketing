@@ -1,0 +1,33 @@
+[class*=-container]{
+  @include base-padding;
+  @include outer-container;
+  max-width: 1300px;
+  position: relative;
+}
+
+/*-----------------------
+Why
+-----------------------*/
+#formFor{
+  .button-primary{
+    @include rem(margin-top, 10px);
+    width: 100%;
+
+    @include media($tablet){
+      display: inline-block;
+      width: 39%;
+      margin-left: -4px;
+    }
+  }
+
+  .email{
+    @include media($tablet){
+      display: inline-block;
+      width: 60%;
+    }
+  }
+}
+
+.home-image{
+  width: 50%;
+}

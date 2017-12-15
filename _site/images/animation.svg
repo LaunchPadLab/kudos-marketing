@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="381px" height="586px" viewBox="0 0 381 586" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 43.2 (39069) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 2</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="440" width="331" height="96"></rect>
+        <filter x="-11.6%" y="-38.0%" width="123.3%" height="180.2%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="12.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.5 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <rect id="path-3" x="0" y="330" width="331" height="96"></rect>
+        <filter x="-11.6%" y="-38.0%" width="123.3%" height="180.2%" filterUnits="objectBoundingBox" id="filter-4">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="12.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.5 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <rect id="path-5" x="0" y="220" width="331" height="96"></rect>
+        <filter x="-11.6%" y="-38.0%" width="123.3%" height="180.2%" filterUnits="objectBoundingBox" id="filter-6">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="12.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.5 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <rect id="path-7" x="0" y="110" width="331" height="96"></rect>
+        <filter x="-11.6%" y="-38.0%" width="123.3%" height="180.2%" filterUnits="objectBoundingBox" id="filter-8">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="12.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.5 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <rect id="path-9" x="0" y="0" width="331" height="96"></rect>
+        <filter x="-11.6%" y="-38.0%" width="123.3%" height="180.2%" filterUnits="objectBoundingBox" id="filter-10">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="12.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.5 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Visual-Design" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Landing-Page-Copy-4" transform="translate(-170.000000, -96.000000)">
+            <g id="Group-2" transform="translate(195.000000, 119.000000)">
+                <g id="Rectangle-13-Copy-2">
+                    <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                    <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-1"></use>
+                </g>
+                <circle id="Oval-6" fill="#9B9B9B" cx="48" cy="489" r="30"></circle>
+                <text id="Brendan-Hennessy" font-family="WorkSans-Regular, Work Sans" font-size="20" font-weight="normal" fill="#4A4A4A">
+                    <tspan x="93" y="485">Brendan Hennessy</tspan>
+                </text>
+                <text id="BH" font-family="WorkSans-Regular, Work Sans" font-size="23" font-weight="normal" fill="#FFFFFF">
+                    <tspan x="32.0495" y="496">BH</tspan>
+                </text>
+                <text id="Co-Founder-&amp;-CTO" font-family="WorkSans-Regular, Work Sans" font-size="15" font-weight="normal" fill="#4A4A4A">
+                    <tspan x="93" y="507">Co Founder &amp; CTO</tspan>
+                </text>
+                <g id="Rectangle-13-Copy-2">
+                    <use fill="black" fill-opacity="1" filter="url(#filter-4)" xlink:href="#path-3"></use>
+                    <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-3"></use>
+                </g>
+                <circle id="Oval-6" fill="#9B9B9B" cx="48" cy="379" r="30"></circle>
+                <text id="Scott-Weisman" font-family="WorkSans-Regular, Work Sans" font-size="20" font-weight="normal" fill="#4A4A4A">
+                    <tspan x="93" y="375">Scott Weisman</tspan>
+                </text>
+                <text id="SW" font-family="WorkSans-Regular, Work Sans" font-size="23" font-weight="normal" fill="#FFFFFF">
+                    <tspan x="29.577" y="386">SW</tspan>
+                </text>
+                <text id="Co-Founder-&amp;-Develop" font-family="WorkSans-Regular, Work Sans" font-size="15" font-weight="normal" fill="#4A4A4A">
+                    <tspan x="93" y="397">Co Founder &amp; Developer</tspan>
+                </text>
+                <g id="Rectangle-13-Copy-2">
+                    <use fill="black" fill-opacity="1" filter="url(#filter-6)" xlink:href="#path-5"></use>
+                    <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-5"></use>
+                </g>
+                <circle id="Oval-6" fill="#9B9B9B" cx="48" cy="269" r="30"></circle>
+                <text id="Monique-Marchwiany" font-family="WorkSans-Regular, Work Sans" font-size="20" font-weight="normal" fill="#4A4A4A">
+                    <tspan x="93" y="265">Monique Marchwiany</tspan>
+                </text>
+                <text id="MM" font-family="WorkSans-Regular, Work Sans" font-size="23" font-weight="normal" fill="#FFFFFF">
+                    <tspan x="28.358" y="276">MM</tspan>
+                </text>
+                <text id="Designer" font-family="WorkSans-Regular, Work Sans" font-size="15" font-weight="normal" fill="#4A4A4A">
+                    <tspan x="93" y="287">Designer</tspan>
+                </text>
+                <g id="Rectangle-13-Copy-2">
+                    <use fill="black" fill-opacity="1" filter="url(#filter-8)" xlink:href="#path-7"></use>
+                    <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-7"></use>
+                </g>
+                <circle id="Oval-6" fill="#E8018C" cx="48" cy="159" r="30"></circle>
+                <text id="Diana-Camacho" font-family="WorkSans-Regular, Work Sans" font-size="20" font-weight="normal" fill="#4A4A4A">
+                    <tspan x="93" y="155">Diana Camacho</tspan>
+                </text>
+                <text id="Developer" font-family="WorkSans-Regular, Work Sans" font-size="15" font-weight="normal" fill="#4A4A4A">
+                    <tspan x="93" y="177">Developer</tspan>
+                </text>
+                <g id="Rectangle-13-Copy-2">
+                    <use fill="black" fill-opacity="1" filter="url(#filter-10)" xlink:href="#path-9"></use>
+                    <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-9"></use>
+                </g>
+                <circle id="Oval-6" fill="#9B9B9B" cx="48" cy="49" r="30"></circle>
+                <text id="Paul-Gonzalez" font-family="WorkSans-Regular, Work Sans" font-size="20" font-weight="normal" fill="#4A4A4A">
+                    <tspan x="93" y="45">Paul Gonzalez</tspan>
+                </text>
+                <text id="PG" font-family="WorkSans-Regular, Work Sans" font-size="23" font-weight="normal" fill="#FFFFFF">
+                    <tspan x="32.659" y="56">PG</tspan>
+                </text>
+                <text id="Product-Developer" font-family="WorkSans-Regular, Work Sans" font-size="15" font-weight="normal" fill="#4A4A4A">
+                    <tspan x="93" y="67">Product Developer</tspan>
+                </text>
+                <g id="checkmark-success" transform="translate(29.000000, 130.000000)" fill-rule="nonzero" fill="#FFFFFF">
+                    <path d="M49.5923261,5.56779221 L43.0095923,0.394285714 C42.8057554,0.227012987 42.5539568,0.107532468 42.2661871,0.107532468 C41.9784173,0.107532468 41.7146283,0.227012987 41.5107914,0.406233766 L17.5659472,31.0649351 C17.5659472,31.0649351 8.15347722,22.0441558 7.88968825,21.7812987 C7.62589928,21.5184416 7.27817746,21.0763636 6.75059952,21.0763636 C6.22302158,21.0763636 5.98321343,21.4467532 5.70743405,21.7215584 C5.50359712,21.9366234 2.14628297,25.4493506 0.491606715,27.1937662 C0.395683453,27.3012987 0.335731415,27.361039 0.251798561,27.4446753 C0.107913669,27.6477922 0.0119904077,27.8748052 0.0119904077,28.1257143 C0.0119904077,28.3885714 0.107913669,28.6036364 0.251798561,28.8067532 L0.587529976,29.1174026 C0.587529976,29.1174026 17.2901679,45.1038961 17.5659472,45.3787013 C17.8417266,45.6535065 18.177458,46 18.6690647,46 C19.1486811,46 19.5443645,45.4862338 19.7721823,45.2592208 L49.6402878,7.02545455 C49.7841727,6.82233766 49.8800959,6.59532468 49.8800959,6.33246753 C49.8800959,6.03376623 49.7601918,5.78285714 49.5923261,5.56779221 L49.5923261,5.56779221 Z" id="Shape"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+  {% include head.html %}
+
+  <body>
+
+    {% include header.html %}
+
+    <div class="page-content">
+      <div class="wrapper">
+        {{ content }}
+      </div>
+    </div>
+
+    {% include footer.html %}
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="/javascript/delay-animation.js"></script>
+    <script src="{{ "/javascript/nav.js" | prepend: site.baseurl }}"></script>
+    <script src="/javascript/morph-modal.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2//2.0.0-beta.2.4/owl.carousel.min.js"></script>
+    <script src="{{ "/javascript/slider.js" | prepend: site.baseurl }}"></script>
+    <script src="{{ "/javascript/pagination.js" | prepend: site.baseurl }}"></script>
+    <script src="{{ "/javascript/modal.js" | prepend: site.baseurl }}"></script>
+    <script src="{{ "/javascript/video.js" | prepend: site.baseurl }}"></script>
+    <script src="{{ "/javascript/lightbox.js" | prepend: site.baseurl }}"></script>
+    <script src="{{ "/javascript/expand.js" | prepend: site.baseurl }}"></script>
+    {% include analytics.html %}
+  </body>
+
+</html>
