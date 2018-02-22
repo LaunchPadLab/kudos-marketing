@@ -252,6 +252,7 @@ Mobile Nav Overlay
 
 .page-header { position: relative; text-align: center; }
 @media screen and (min-width: 64em) and (orientation: landscape) { .page-header .header-container { height: 100vh; } }
+.page-header .page-form-container { max-width: 720px; margin: 0 auto; padding: 10px; }
 .page-header .header-text { -webkit-animation: fade-in 0.6s ease-in; -moz-animation: fade-in 0.6s ease-in; animation: fade-in 0.6s ease-in; display: inline-block; text-align: center; margin: 0 auto; }
 @media screen and (min-width: 45em) { .page-header .header-text { max-width: 700px; } }
 @media screen and (min-width: 64em) and (orientation: landscape) { .page-header .header-text { text-align: left; float: right; float: left; display: block; margin-right: 2.35765%; width: 57.35098%; margin-left: 31.98677%; -webkit-transform: translateY(-50%); -moz-transform: translateY(-50%); -ms-transform: translateY(-50%); -o-transform: translateY(-50%); transform: translateY(-50%); position: absolute; top: 50%; }
