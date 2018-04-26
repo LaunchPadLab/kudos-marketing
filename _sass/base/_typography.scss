@@ -30,7 +30,7 @@ h6 {
   line-height: 1.1;
 }
 
-h1 { font-size: $font-size-base * 2.00; @include media($tablet){ font-size: $font-size-base * 3.50; } }
+h1 { font-size: $font-size-base * 2.00; @include media($tablet){ font-size: $font-size-base * 3.00; } }
 h2 { font-size: $font-size-base * 2.00; @include media($tablet){ font-size: $font-size-base * 2.50; } }
 h3 { font-size: $font-size-base * 1.45; @include media($tablet){ font-size: $font-size-base * 1.75; } @include media($tablet-landscape){ font-size: $font-size-base * 2.25; } }
 h4 { font-size: $font-size-base * 1.25; @include media($tablet){ font-size: $font-size-base * 1.50; } }
@@ -41,9 +41,6 @@ h1{
   letter-spacing: 2px;
 }
 
-h2{
-  color: $blue-base;
-}
 
 h4{
   @include font-type($primary-sans-serif, normal, $bold);
@@ -78,7 +75,7 @@ dd{
 a{
   color: $grey-base;
   cursor: pointer;
-  @include font-type($primary-sans-serif, normal, $bold);
+  @include font-type($secondary-sans-serif, normal, $bold);
   @include transition(all 0.3s ease-in-out);
   text-decoration: none;
 
@@ -105,7 +102,7 @@ u{
 
 blockquote{
   color: $grey-base;
-  @include font-type($primary-sans-serif, italic, $light);
+  @include font-type($primary-sans-serif, normal, $light);
   @include s-medium;
   @include rem(margin-bottom, 12px);
   line-height: $base-line-loose;
@@ -114,15 +111,6 @@ blockquote{
   @include media($tablet){
     @include s-bigger;
     line-height: 40px;
-  }
-
-  &:before{
-    content: "“";
-    display: block;
-    font-family: Georgia;
-    font-size: 200px;
-    @include position(absolute, 40px null null -35px);
-    opacity: 0.1;
   }
 }
 

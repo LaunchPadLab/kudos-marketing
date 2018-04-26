@@ -1,10 +1,28 @@
 .page-header {
-  background: url('../images/background.jpg') no-repeat center;
-  background-size: cover;
-  min-height: 100vh;
-  //@include rem(padding, 40px 20px);
 
-  h1, p, h4 { color: $white-base;  }
+  .home-background{
+    @include position(absolute, 0px 0px null null);
+    width: 130%;
+
+    @include media($tablet){
+      @include position(absolute, -300px 0px null null);
+      width: 119%;
+    }
+
+
+    @include media($tablet-landscape){
+      @include position(absolute, 0px 0px null null);
+      width: 42%;
+    }
+  }
+
+  h1, p, h4 {
+    color: $white-base;
+
+    @include media($tablet-landscape){
+      color: $black-base;
+    }
+  }
 
   h4{
     border-bottom: 2px solid $white-base;
@@ -18,9 +36,11 @@
   position: relative;
   text-align: center;
 
+
   .header-container{
     @include media($tablet-landscape){
       height: 100vh;
+      max-width: 1200px;
     }
   }
 
@@ -46,9 +66,8 @@
     @include media($tablet-landscape) {
       //@include vertical-center;
       text-align: left;
-      float: right;
-      @include span-columns(7 of 12);
-      @include shift(3.75);
+      @include span-columns(6.5 of 12);
+      //@include shift(3.75);
       @include vertical-center;
     }
 
@@ -71,10 +90,12 @@
     @include rem(margin-top, 50px);
 
     @include media($tablet-landscape) {
+      max-width: 100%;
       @include rem(margin-top, 0px);
-      float: left;
-      @include span-columns(3.5 of 12);
-      @include vertical-center;
+      @include span-columns(5 of 12);
+      @include shift(7);
+      //@include vertical-center;
+      @include position(absolute, 200px 0px null null);
     }
   }
 }

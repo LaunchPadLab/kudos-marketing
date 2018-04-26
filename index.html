@@ -4,11 +4,24 @@ layout: default
 description: Peer-to-peer employee of the week nominations bring out the best in your team.
 ---
 
-<header class="page-header">
+<header class="navigation">
+  <h5 class="logo"><a href="/">Kudos</a></h5>
+  <nav class="navigation-menu">
+    <ul>
+      <li><a href="#features" class="scroll-link">Features</a></li>
+      <li><a href="#why" class="scroll-link">Why</a></li>
+      <li><a href="#testimonials" class="scroll-link">Testimonials</a></li>
+      <li><a href="#cta" class="scroll-link">Sign Up</a></li>
+    </ul>
+  </nav>
+</header>
+
+<header id="about" class="page-header">
+  <img src="/images/hero-background.png" class="home-background">
+
   <div class="header-container">
     <div class="header-text">
-      <h4>Kudos</h4>
-      <h1>Give your team members the recognition they deserve</h1>
+      <h1>Give your team members the recognition they deserve.</h1>
       <p>Peer-to-peer employee of the week nominations bring out the best in your team.</p>
       <form method="post" id="formFor" accept-charset="UTF-8" action="https://www.formfor.com/submissions/9Fd6LmXvxMU6riAarLFnvQKH" target="_blank">
         <input type="text" name="email" placeholder="Email Address" class="email">
@@ -16,8 +29,131 @@ description: Peer-to-peer employee of the week nominations bring out the best in
         <input type="submit" name="commit" value="Notify me when it’s LIVE" class="button-primary">
       </form>
     </div>
-    <img src="{{"/images/animation.gif" | relative_url}}" class="home-image">
+    <img src="/images/vote.svg" class="home-image">
   </div>
 </header>
+
+<section id="features" class="feature-kudos-wrapper">
+  <div class="features-kudos-container">
+    <div class="feature-block">
+      <img src="/images/weekly-voting.svg" class="wow animated" alt="Weekly voting">
+      <div class="text-block">
+        <h3>Weekly voting</h3>
+        <p>Your team members want more frequent feedback, especially about the things they are doing well. A weekly vote is the perfect cadence for employees to get positive feedback, as well as to recognize top performers on the team.</p>
+      </div>
+    </div>
+    <div class="feature-block">
+      <img src="/images/peer-to-peer.svg" class="wow animated" alt="Peer-to-Peer Feedback" style="max-width: 200px;">
+      <div class="text-block">
+        <h3>Peer-to-Peer Attributed Feedback</h3>
+        <p>When it comes to feedback, context matters. That's why we do not believe in anonymous feedback. Give your teammates the praise they deserve, with the confidence they will understand how much you appreciate their hard work.</p>
+      </div>
+    </div>
+    <div class="feature-block">
+      <img src="/images/win-totals.svg" class="wow animated" alt="Win Totals">
+      <div class="text-block">
+        <h3>"Win" Totals</h3>
+        <p>Differentiating your employee benefits is challenging. You can use an employee's win total on Kudos to create unique perks: extra vacation days, donations to charity, or maybe just some cool company swag. It's a low lift way of showing extra appreciation for all that your team does.</p>
+      </div>
+    </div>
+    <div class="feature-block">
+      <img src="/images/teams.svg" class="wow animated" alt="Multiple Teams">
+      <div class="text-block">
+        <h3>Multiple Teams</h3>
+        <p>Whether you are team of 10 or a company of 100, Kudos allows you to create as many contests as you want, for any group of specific employees. Maybe you want separate contests for your sales team, product team, and marketing team; no worries, we got you covered.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<hr>
+
+<section id="why" class="articles-wrapper">
+  <div class="articles-kudos-container">
+    <header>
+      <h2>Does peer recognition matter? </h2>
+      <p>Your'e doggone right it does. And don't just take our word for it.</p>
+    </header>
+
+  </div>
+</section>
+
+<div class="articles-block">
+  <div class="article-block yellow-block">
+    <img src="/images/hbr-logo.png" alt="Society for Human Resource Management Logo">
+    <p>Negative Feedback Rarely Leads to Improvement</p>
+    <a href="https://hbr.org/2018/01/negative-feedback-rarely-leads-to-improvement" target="_blank">Read Article</a>
+  </div>
+  <div class="article-block blue-block">
+    <img src="/images/shrm-logo.png" alt="Society for Human Resource Management Logo">
+    <p>Employers Embrace Peer-to-Peer Recognition</p>
+    <a href="https://www.shrm.org/hr-today/news/hr-magazine/pages/1114-peer-recognition.aspx" target="_blank">Read Article</a>
+  </div>
+  <div class="article-block pink-block">
+    <img src="/images/bbna-logo.png" alt="Society for Human Resource Management Logo">
+    <p>Employee Peer Recognition Boosts Work Engagement</p>
+    <a href="https://www.bna.com/employee-peer-recognition-n73014448785/" target="_blank">Read Article</a>
+  </div>
+</div>
+
+<section id="testimonials" class="testimonial-wrapper">
+  <div class="owl-carousel">
+    <div class="item testimonial-kudos-container">
+      <div class="text-block">
+        <blockquote>It’s motivating to know I’m being recognized for my hard work on specific projects. And the fact that I can see all of the feedback and who says it, makes it much more personal and useful.”</blockquote>
+        <cite>
+          <div class="text-block">
+            <h6>Diana Camacho</h6>
+            <p>Developer, LaunchPad Lab</p>
+          </div>
+        </cite>
+      </div>
+    </div>
+    <div class="item testimonial-kudos-container">
+      <div class="text-block">
+        <blockquote>Peer-to-peer recognition provides a nice boost to any teammate. Each person on our team has tremendous respect for their peers, and the work that they do, so that vote of confidence goes a long way.”</blockquote>
+        <cite>
+
+          <div class="text-block">
+            <h6>Brendan Hennessy</h6>
+            <p>CTO and Partner, LaunchPad Lab</p>
+          </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="cta" class="contact-kudos-container">
+  <img src="/images/give-kudos.svg" alt="Give Kudos">
+  <h2>Ready to start giving kudos?</h2>
+  <p>You’ll be the first to know when it’s live!</p>
+  <form method="post" id="formFor" accept-charset="UTF-8" action="https://www.formfor.com/submissions/9Fd6LmXvxMU6riAarLFnvQKH" target="_blank">
+    <input type="text" name="email" placeholder="Email Address" class="email">
+    <input type="text" name="_formfor_help" style="display:none;">
+    <input type="submit" name="commit" value="Notify me when it’s LIVE" class="button-primary">
+  </form>
+</section>
+
+<footer>
+  <div class="company">
+    <h6>Kudos</h6>
+    <p>© {{ site.time | date: '%Y' }} Kudos. Made with ♥ by <a href="https://launchpadlab.com?utm_source=side_product&amp;utm_campaign=kudos" target="_blank">LaunchPad Lab.</a></p>
+  </div>
+  <div class="footer-nav">
+    <nav class="footer-menu">
+      <ul>
+        <li><a href="#about" class="scroll-link">About</a></li>
+        <li><a href="#features" class="scroll-link">Features</a></li>
+        <li><a href="#why" class="scroll-link">Why</a></li>
+        <li><a href="#testimonials" class="scroll-link">Testimonials</a></li>
+      </ul>
+    </nav>
+    <ul class="social-media">
+      <li><a href="mailto:paul@launchpadlab.com" target="_blank"><i class="email-small"></i></a></li>
+      <!--<li><a href="" target="_blank"><i class="twitter-small"></i></a></li>-->
+    </ul>
+  </div>
+</footer>
+
 
 <script type="text/javascript" src="https://www.formfor.com/analytics_script_0.1.0.js"></script>

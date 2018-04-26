@@ -3,37 +3,91 @@ Footer
 -----------------------*/
 footer{
   display: inline-block;
-
+  @include rem(padding, 20px 20px 10px);
   text-align: center;
   width: 100%;
+  border-top: 1px solid lighten($white-med, 5%);
+  opacity: 0.8;
+
+  @include media($tablet-landscape){
+    @include rem(padding, 50px 20px 80px);
+  }
 
   p{ @include s-tiny; }
 }
 
-.footer-nav{
-  @include rem(padding, 40px 20px);
-  display: inline-block;
-  width: 100%;
-
+.company{
   @include media($tablet-landscape){
-    @include rem(padding, 0px 20px);
-    @include rem(margin-bottom, -50px);
+    float: left;
+    @include rem(margin-top, 8px);
   }
 
-  a{
-    color: $grey-light;
-    @include s-small;
+  h6, p{
+    color: $grey-base;
 
-    &:hover{
+    @include media($tablet-landscape){
+      display: inline-block;
+    }
+  }
+
+  h6{
+    &:after{
+      content: "EARLY ACCESS";
+      font-size: 10px;
+      @include rem(margin-left, 5px);
+      vertical-align: 5px;
+    }
+  }
+
+  p{
+    &:before{
+      @include media($tablet-landscape){
+        content: "|";
+        display: inline-block;
+        @include rem(margin-left, 10px);
+        @include rem(padding-right, 10px);
+      }
+    }
+
+    a{
       color: $grey-base;
+      font-weight: normal;
+
+      &:hover{
+        text-decoration: underline;
+      }
     }
   }
 }
 
+.footer-nav{
+
+  @include media($tablet-landscape){
+    float: right;
+  }
+
+  a{
+    color: $grey-base;
+    @include s-small;
+  }
+}
+
 .footer-menu{
+  @include rem(margin, 20px 0px 10px);
+
+  @include media($tablet-landscape){
+    @include rem(margin, 0px);
+  }
+
   li{
+    @include media($tablet){
+      display: inline-block;
+      @include rem(margin, 0px 15px);
+    }
+  }
+
+  @include media($tablet-landscape) {
     display: inline-block;
-    @include rem(margin, 0px 15px);
   }
 }
 
@@ -41,7 +95,10 @@ footer{
 Social Media
 -----------------------*/
 .social-media{
-  @include rem(margin-top, 20px);
+
+  @include media($tablet-landscape){
+    display: inline-block;
+  }
 
   li{
     display: inline-block;
@@ -53,46 +110,8 @@ Social Media
       opacity: 0.6;
     }
 
-    @include media($tablet-landscape){
-      @include rem(margin, -5px 5px 0px);
-    }
-  }
-}
-
-/*-----------------------
-Company
------------------------*/
-.company{
-  border-top: 1px solid $white-med;
-  @include rem(padding, 20px);
-
-  @include media($tablet-landscape){
-    border: none;
-    @include rem(padding, 30px 20px 50px);
-  }
-
-  p{
-    color: $grey-base;
-    opacity: 0.4;
-    margin-bottom: 0px;
-
-    @include media($tablet-landscape){
-       margin-top: -8px;
-    }
-  }
-
-  li{
-    display: inline-block;
-
-    a{
-      opacity: 0.4;
-      font-weight: normal;
+    @include media($tablet){
       @include rem(margin, 0px 5px);
-      @include s-tiny;
-
-      &:hover{
-        opacity: 1;
-      }
     }
   }
 }

@@ -1,12 +1,225 @@
 [class*=-container]{
   @include base-padding;
   @include outer-container;
-  max-width: 1300px;
+  max-width: 1000px;
   position: relative;
 }
 
 /*-----------------------
-Why
+Features
+-----------------------*/
+.feature-block{
+  display: inline-block;
+  @include rem(margin-top, 40px);
+  width: 100%;
+  position: relative;
+
+  .text-block{
+    @include media($tablet){
+      margin-top: 100px;
+      @include span-columns(6.4 of 12);
+      @include rem(margin-bottom, 0px);
+      @include shift(0.5);
+    }
+  }
+
+  img{
+    @include rem(margin-bottom, 15px);
+
+    @include media($tablet){
+      @include span-columns(5 of 12);
+      @include rem(margin-bottom, 0px);
+      @include animation(fade-in-left 0.6s ease-in);
+    }
+  }
+
+  &:nth-child(even){
+    .text-block{
+      @include media($tablet){
+        @include shift(0);
+      }
+    }
+
+    img{
+      @include media($tablet){
+        @include shift(0.5);
+        float: right;
+        margin-right: 0px;
+        @include animation(fade-in-right 0.6s ease-in);
+
+      }
+    }
+  }
+}
+
+hr{
+  max-width: 1000px;
+  @include center;
+  border: none;
+  border-bottom: 1px solid $white-med;
+}
+
+
+/*-----------------------
+Articles
+-----------------------*/
+
+.articles-kudos-container{
+  header{
+    margin-bottom: 0px;
+    text-align: center;
+  }
+
+  @include rem(padding, 70px 20px 0px 20px);
+
+  @include media($tablet) { @include rem(padding, 90px 40px 20px); }
+
+}
+
+.articles-block{
+  margin: 30px 30px 0px;
+
+  @include media($tablet){
+    margin: 30px;
+  }
+}
+
+.article-block{
+  padding: 30px;
+  height: 300px;
+  position: relative;
+
+  @include media($tablet){
+    @include span-columns(4 of 12);
+  }
+
+  img{
+    height: 60px;
+    width: auto;
+  }
+
+  p, a{
+    color: $white-base;
+  }
+
+  p{
+    margin-top: 20px;
+  }
+
+  a{
+    @include position(absolute, null null 30px null);
+    opacity: 0.5;
+
+    &:hover{
+      opacity: 1;
+    }
+  }
+}
+
+.blue-block{
+  background-color: #0088FF;
+}
+
+.pink-block{
+  background-color: #D61C71;
+}
+
+.yellow-block{
+  background-color: #FDB800;
+}
+
+/*-----------------------
+Testimonial
+-----------------------*/
+.testimonials-kudos-container{
+  padding-bottom: 0px;
+  text-align: center;
+}
+
+.testimonial-kudos-container{
+  @include rem(padding, 70px 20px);
+
+  @include media($tablet) { @include rem(padding, 90px 40px 40px); }
+}
+
+.testimonial-wrapper{
+  @include rem(padding, 50px 0px);
+  background-color: #2A2E53;
+  display: inline-block;
+  margin: 30px;
+  width: calc(100% - 60px);
+  position: relative;
+  overflow: hidden;
+
+  &:before{
+    content: "“";
+    display: block;
+    font-family: Georgia;
+    font-size: 900px;
+    @include position(absolute, -20px null null -35px);
+    opacity: 0.1;
+    font-weight: 800;
+    color: $white-base;
+    opacity: 0.05;
+  }
+
+  @include media($tablet) {
+    @include rem(padding, 0px 40px 90px);
+    min-height: 460px;
+
+  }
+
+  blockquote, h6, p{
+    color: $white-base;
+    text-align: center;
+  }
+}
+
+
+cite{
+  h6{
+    @include font-type($secondary-sans-serif, normal, $bold);
+    margin-bottom: 2px;
+  }
+
+
+}
+
+
+/*-----------------------
+Contact
+-----------------------*/
+.contact-kudos-container{
+  text-align: center;
+
+
+  img{
+    margin-bottom: 30px;
+    width: 200px;
+  }
+
+
+  #formFor{
+    @include center;
+    @include rem(margin-top, 20px);
+    max-width: 650px;
+
+    input[type="submit"]{
+      color: $white-base;
+      float: right;
+      width: 100%;
+
+      @include media($tablet){
+        width: 40%;
+
+      }
+    }
+  }
+}
+
+
+/*-----------------------
+Form
 -----------------------*/
 #formFor{
   .button-primary{
@@ -17,8 +230,25 @@ Why
       display: inline-block;
       width: 39%;
       margin-left: -4px;
+      margin-top: 0px;
     }
   }
+
+  input[type="text"]{
+    background-color: #EEECEC;
+    color: $black-base;
+    float: left;
+
+    @include placeholder{
+      color: $black-base;
+    }
+
+    @include media($tablet){
+      width: 60%;
+    }
+  }
+
+
 
   .email{
     @include media($tablet){

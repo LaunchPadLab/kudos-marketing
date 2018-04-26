@@ -146,7 +146,29 @@ Previous and Next Buttons
 -----------------------*/
 .owl-nav{
   text-align: center;
-  display: none;
+}
+.owl-prev, .owl-next{
+    display: block;
+    @include transition(all 0.2s ease-in);
+    display: inline-block;
+    opacity: 0.5;
+    text-indent: -99999px;
+    margin: 0px 10px;
+    background: url("../images/pagination.svg") no-repeat 100%;
+    height: 35px;
+    width: 35px;
+
+  &:hover{ opacity: 0.9; }
+}
+
+.owl-prev{
+  @include transform(rotate(180deg));
+  @include rem(margin-top, -20px);
+}
+
+.owl-next{
+  right: 10px;
+  top: 29%;
 }
 
 
@@ -154,29 +176,14 @@ Previous and Next Buttons
 Pagination Dots
 -----------------------*/
 .owl-dots{
-  @include rem(margin, 20px 0px 0px);
-  text-align: center;
-  zoom: 1;
-
-  .owl-dot{
-    background-color: $grey-base;
-    display: inline-block;
-    height: 12px;
-    @include rem(border-radius, 100px);
-    @include rem(margin, 5px 7px);
-    width: 12px;
-
-    &.active{
-      background-color: $blue-base;
-    }
-  }
+  display: none;
 }
 
 /*-----------------------
 Custom
 -----------------------*/
 .item{
-  opacity: 0.3;
+  //opacity: 0.3;
   @include transition(.4s ease all);
 
   @include media($tablet){
@@ -184,21 +191,24 @@ Custom
   }
 }
 
-.owl-item{
+.active.owl-item{
   padding: 20px;
 
   @include media($tablet){
+    @include transition(.4s ease all);
+    @include transform(scale(0.9));
     padding:0;
   }
 }
 
-.active .item{
-  opacity:1;
+.active.owl-item.center{
+  opacity: 1;
+  @include media($tablet){
+    @include transform(scale(1));
+  }
 }
 
 .owl-item {
   -webkit-backface-visibility: hidden;
   -webkit-transform: translateZ(0) scale(1.0, 1.0);
 }
-
-
